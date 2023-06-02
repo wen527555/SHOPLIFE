@@ -32,12 +32,14 @@ const NavBar = () => {
               BLOG
             </li>
           </ul>
-          <div className="relative">
-            <img className="w-8 h-8" src={bag} alt="bagImg"></img>
-            <span className="absolute w-8 top-2.5 left-0 text-sm flex items-center justify-center font-semibold ">
-              {productData.length}
-            </span>
-          </div>
+          <Link to="/cart">
+            <div className="relative">
+              <img className="w-8 h-8" src={bag} alt="bagImg"></img>
+              <span className="absolute w-8 top-2.5 left-0 text-sm flex items-center justify-center font-semibold ">
+                {productData.length}
+              </span>
+            </div>
+          </Link>
           <img className="w-8 h-8" src={cart} alt="cartImg"></img>
         </div>
       </div>
